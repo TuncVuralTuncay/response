@@ -3,7 +3,7 @@ input : process.stdin,
 output : process.stdout
 })
 read.question("Lütfen url giriniz : ").then(a=>
-.setTimeout(() =>{
+setTimeout(() =>{
 const fetch = require("node-fetch") 
 fetch(a) 
 console.log("Request has been send successfully") 
