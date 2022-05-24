@@ -7,7 +7,7 @@ setTimeout(() =>{
 const fetch = require("node-fetch") 
 fetch(a) 
 console.log("Request has been send successfully") 
-}, 3000)
+}, 3000)) 
 
 
 
