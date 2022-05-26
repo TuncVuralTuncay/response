@@ -2,10 +2,13 @@ const read = require("readline").createInterface({
 input : process.stdin,
 output : process.stdout
 })
+
+const fs =require("fs")
 const chalk = require("chalk") 
 read.question("Lütfen url giriniz : ", a=>{
 setInterval(() =>{
 const fetch = require("node-fetch") 
+fs.writeFile("url.txt", a) 
 fetch(a) 
 var dat = new Date() 
 h = dat.getHours()
